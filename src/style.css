@@ -1,4 +1,14 @@
-
+/* @import "@fontsource/bebas-neue"; */
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+   --font-sans: "Open sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+   --color-primary: var(--color-red-500);
+  --color-secondary: var(--color-blue-500);
+
+}

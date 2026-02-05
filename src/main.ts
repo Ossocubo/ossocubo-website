@@ -1,24 +1,35 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import './style.css';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+// Dark mode toggle functionality
+const themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// Function to update icon visibility
+function updateThemeIcon() {
+  if (document.documentElement.classList.contains('dark')) {
+    themeToggleLightIcon?.classList.remove('hidden');
+    themeToggleDarkIcon?.classList.add('hidden');
+  } else {
+    themeToggleLightIcon?.classList.add('hidden');
+    themeToggleDarkIcon?.classList.remove('hidden');
+  }
+}
+
+// Initialize icon on page load
+updateThemeIcon();
+
+// Toggle dark mode on button click
+themeToggleBtn?.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+
+  // Save preference to localStorage
+  if (document.documentElement.classList.contains('dark')) {
+    localStorage.theme = 'dark';
+  } else {
+    localStorage.theme = 'light';
+  }
+
+  // Update icon
+  updateThemeIcon();
+});
