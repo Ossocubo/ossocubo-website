@@ -68,20 +68,56 @@
 
   <main id="main-content">
     <!-- Hero Section -->
-    <header class="flex items-center justify-center min-h-screen bg-gradient-to-br from-cyan-300 to-sky-500 dark:from-blue-900 dark:to-purple-900 relative" style="background-image: url('/images/ossocubo_blue_volta_pattern.png'); background-repeat: repeat; background-blend-mode: overlay;">
-      <div class="text-center relative z-10">
+    <header
+      class="flex items-center justify-center min-h-screen bg-gradient-to-br from-cyan-300 to-sky-500 dark:from-blue-900 dark:to-purple-900 relative"
+      style="background-image: url('/images/ossocubo_blue_volta_pattern_BN_soft.png'); background-repeat: repeat; background-blend-mode: overlay;">
+      <div class="text-center relative z-10 max-w-2xl">
         <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold text-white">
-          Ossocubo
+          <img class="mx-auto"src="/images/ossocubo_logo.png" alt="Ossocubo">
         </h1>
-        <p class="mt-6 text-xl md:text-2xl text-white dark:text-gray-100">
-          Ossocubo is a small development team based in Switzerland and Italy. Our goal is to create fun, visually
-          stunning and memorable game experiences that we'd never stop playing as artists, professionals, and passionate
-          gamers alike. We are currently working on our first game, Blue Volta.
-
+        <p class="mt-6 text-xl md:text-2xl/6">
+          <strong>A small game development team <BR> based in Switzerland and Italy.</strong>
         </p>
 
       </div>
     </header>
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="message from the team">
+      <div class="container mx-auto px-4 flex flex-col justify-center items-center ">
+        <div class="max-w-2xl dark:text-white ">
+          <h2 class="text-4xl md:text-5xl font-bold text-center  mb-12">A message from the team</h2>
+          <p>Hey folks!<br />We&rsquo;re Ossocubo, a small Italian development team that&rsquo;s been in hibernation for
+            quite a while.</p>
+          <p>Between 2014 and 2016 we worked on a graphic adventure called <em>Blue Volta</em>. What started as a small,
+            manageable project slowly grew into something far more ambitious than we were ready for. Inexperience, bad
+            timing, and an ever-expanding scope eventually brought development to a halt.</p>
+          <p><em>Blue Volta</em> was never officially released, but during that time we created a demo that was shown at
+            events and caught the attention of a few publishers. Years later, during one of our regular pizza-fueled
+            meetups (we like pizza), we decided it was finally time to release that old demo &ndash; bugs and all.</p>
+          <p>This demo was never meant for public release, but we wanted to preserve and honor the work that went into
+            it, especially the contributions of our amazing collaborators.</p>
+          <p>Will <em>Blue Volta</em> ever be fully released?<br />Maybe. If circumstances change and someone decides to
+            throw some money, we&rsquo;d surely do it! We&rsquo;d probably make a different game today, but with the
+            same heart.</p>
+          <p>Now a few notes:</p>
+          <ul>
+            <li>This was created using <strong>Unity 5 / Unity 2017</strong>, we worked on it from 2014 to 2016 and it
+              has not been updated since</li>
+          </ul>
+          <ul>
+            <li>The demo was <strong>never meant for public release</strong>, so expect some bugs.</li>
+            <li><strong>Supported input devices</strong>: Mouse + keyboard (gamepad is <strong>not supported</strong>).
+            </li>
+            <li><strong>Maximum supported resolution</strong>: Full HD (1920x1080), you can go higher but bad things
+              will happen</li>
+            <li>The demo was built with <strong>Unity 2017</strong>, which contains a <strong>known
+                vulnerability</strong> in the executable. For details, see:<a
+                href="https://unity.com/security/sept-2025-01"> Unity Security Advisory (September 2025)</a>.&nbsp;</li>
+          </ul>
+          <p>We hope you&rsquo;ll enjoy playing the <em>Blue Volta</em> demo!</p>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Team Section -->
     <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="team-heading">
@@ -92,25 +128,29 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <!-- Team Member 1 -->
           <div class="flex flex-col items-center">
-            <img src="/images/luca-esposito-ossocubo.jpg" alt="Luca's photo" class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
+            <img src="/images/luca-esposito-ossocubo.jpg" alt="Luca's photo"
+              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Luca</h3>
             <p class="text-gray-700 dark:text-gray-300">Mad Bard and Dreadful Tyrant</p>
           </div>
           <!-- Team Member 2 -->
           <div class="flex flex-col items-center">
-            <img src="/images/alberto-congiu-ossocubo.jpg" alt="Alberto Congiu's photo" class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
+            <img src="/images/alberto-congiu-ossocubo.jpg" alt="Alberto Congiu's photo"
+              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Alberto Congiu</h3>
             <p class="text-gray-700 dark:text-gray-300">General Purpose Code Monkey</p>
           </div>
           <!-- Team Member 3 -->
           <div class="flex flex-col items-center">
-            <img src="/images/francesco-pirini-ossocubo.jpg" alt="Francesco Pirini's photo" class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
+            <img src="/images/francesco-pirini-ossocubo.jpg" alt="Francesco Pirini's photo"
+              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Francesco Pirini</h3>
             <p class="text-gray-700 dark:text-gray-300">Indecisive Illustrator</p>
           </div>
           <!-- Team Member 4 -->
           <div class="flex flex-col items-center">
-            <img src="/images/mattia-pirini-ossocubo.jpg" alt="Mattia Pirini's photo" class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
+            <img src="/images/mattia-pirini-ossocubo.jpg" alt="Mattia Pirini's photo"
+              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Mattia Pirini</h3>
             <p class="text-gray-700 dark:text-gray-300">Master of None</p>
           </div>
@@ -123,15 +163,20 @@
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Column: Decorative Image -->
-          <img src="/images/blue-volta-thumbnail.jpg" alt="Blue Volta game thumbnail" class="w-full h-64 md:h-96 object-cover rounded-lg">
+          <img src="/images/blue-volta-thumbnail.jpg" alt="Blue Volta game thumbnail"
+            class="w-full h-64 md:h-96 object-cover rounded-lg">
           <!-- Right Column: Content -->
           <div>
             <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Blue Volta
             </h2>
             <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              We're passionate about creating amazing digital experiences. Let's bring your ideas to life with our
-              expertise and creativity.
+              Blue Volta is a classic point-and-click, third-person graphic adventure. It features extraordinary
+              evocative settings and fully freehand drawn graphics.
+              The player will take Zeno, The Last Librarian, through a life-changing journey. The quest for an ancient
+              volume will steal Zeno away from the sleepy routine of the Citadel of Knowledge. Along the way, he will
+              confront ancient secrets and explore mysterious places teeming with wondrous creatures and bizarre
+              characters.
             </p>
             <a href="https://ossocubo.itch.io/blue-volta-prototype" target="_blank" rel="noopener noreferrer"
               class="inline-block bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
@@ -167,7 +212,11 @@
             <!-- Instagram -->
             <a href="https://www.instagram.com/ossocubo" target="_blank" aria-label="Visit our Instagram profile"
               class="text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded transition-colors duration-200">
-              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 448 512" fill="currentColor"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 448 512"
+                fill="currentColor"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -181,15 +230,22 @@
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
         <div>&copy; 2026 Ossocubo. All rights reserved.</div>
         <div class="flex gap-4 items-center">
-          <span>Built with HTML, CSS & TypeScript</span>
+          <span></span>
           <span>|</span>
-          <a href="#" class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors">Privacy</a>
+          <a href="https://www.iubenda.com/privacy-policy/7765199/full-legal" target="_blank"
+            class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors">Privacy</a>
           <span>|</span>
-          <button id="theme-toggle" type="button" class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 rounded p-1" aria-label="Toggle dark mode">
-            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+          <button id="theme-toggle" type="button"
+            class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 rounded p-1"
+            aria-label="Toggle dark mode">
+            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg>
-            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
               <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
           </button>
