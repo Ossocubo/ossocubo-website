@@ -28,7 +28,7 @@
   <meta property="og:title" content="Ossocubo | a small game development team from Switzerland and Italy.">
   <meta property="og:description"
     content="Ossocubo is small game development team based in Italy.As passionate gamers, professionists and artists, our goal is to create fun and memorable experiences.">
-  <meta property="og:image" content="https://ossocubo.com/og-image.png">
+  <meta property="og:image" content="https://ossocubo.com/og-image.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_US">
@@ -40,11 +40,11 @@
   <meta name="twitter:title" content="Ossocubo | a small game development team from Switzerland and Italy.">
   <meta name="twitter:description"
     content="Ossocubo is small game development team based in Italy.As passionate gamers, professionists and artists, our goal is to create fun and memorable experiences.">
-  <meta name="twitter:image" content="https://ossocubo.com/og-image.png">
+  <meta name="twitter:image" content="https://ossocubo.com/og-image.webp">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/src/style.css">
@@ -70,10 +70,10 @@
     <!-- Hero Section -->
     <header
       class="flex items-center justify-center min-h-screen bg-gradient-to-br from-cyan-300 to-sky-500 dark:from-blue-900 dark:to-purple-900 relative"
-      style="background-image: url('/images/ossocubo_blue_volta_pattern_BN_soft.png'); background-repeat: repeat; background-blend-mode: overlay;">
+      style="background-image: url('/images/ossocubo_blue_volta_pattern_BN_soft.webp'); background-repeat: repeat; background-blend-mode: overlay;">
       <div class="text-center relative z-10 max-w-2xl">
         <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold text-white">
-          <img class="mx-auto"src="/images/ossocubo_logo.png" alt="Ossocubo">
+          <img class="mx-auto" src="/images/ossocubo_logo.webp" alt="Ossocubo">
         </h1>
         <p class="mt-6 text-xl md:text-2xl/6">
           <strong>A small game development team <BR> based in Switzerland and Italy.</strong>
@@ -81,10 +81,10 @@
 
       </div>
     </header>
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="message from the team">
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="message-heading">
       <div class="container mx-auto px-4 flex flex-col justify-center items-center ">
         <div class="max-w-2xl dark:text-white ">
-          <h2 class="text-4xl md:text-5xl font-bold text-center  mb-12">A message from the team</h2>
+          <h2 id="message-heading" class="text-4xl md:text-5xl font-bold text-center  mb-12">A message from the team</h2>
           <p>Hey folks!<br />We&rsquo;re Ossocubo, a small Italian development team that&rsquo;s been in hibernation for
             quite a while.</p>
           <p>Between 2014 and 2016 we worked on a graphic adventure called <em>Blue Volta</em>. What started as a small,
@@ -98,12 +98,11 @@
           <p>Will <em>Blue Volta</em> ever be fully released?<br />Maybe. If circumstances change and someone decides to
             throw some money, we&rsquo;d surely do it! We&rsquo;d probably make a different game today, but with the
             same heart.</p>
+            <br>
           <p>Now a few notes:</p>
-          <ul>
+          <ul class="list-disc list-inside mb-6">
             <li>This was created using <strong>Unity 5 / Unity 2017</strong>, we worked on it from 2014 to 2016 and it
               has not been updated since</li>
-          </ul>
-          <ul>
             <li>The demo was <strong>never meant for public release</strong>, so expect some bugs.</li>
             <li><strong>Supported input devices</strong>: Mouse + keyboard (gamepad is <strong>not supported</strong>).
             </li>
@@ -119,52 +118,36 @@
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="team-heading">
-      <div class="container mx-auto px-4">
-        <h2 id="team-heading" class="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12">
-          People
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          <!-- Team Member 1 -->
-          <div class="flex flex-col items-center">
-            <img src="/images/luca-esposito-ossocubo.jpg" alt="Luca's photo"
-              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Luca</h3>
-            <p class="text-gray-700 dark:text-gray-300">Mad Bard and Dreadful Tyrant</p>
-          </div>
-          <!-- Team Member 2 -->
-          <div class="flex flex-col items-center">
-            <img src="/images/alberto-congiu-ossocubo.jpg" alt="Alberto Congiu's photo"
-              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Alberto Congiu</h3>
-            <p class="text-gray-700 dark:text-gray-300">General Purpose Code Monkey</p>
-          </div>
-          <!-- Team Member 3 -->
-          <div class="flex flex-col items-center">
-            <img src="/images/francesco-pirini-ossocubo.jpg" alt="Francesco Pirini's photo"
-              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Francesco Pirini</h3>
-            <p class="text-gray-700 dark:text-gray-300">Indecisive Illustrator</p>
-          </div>
-          <!-- Team Member 4 -->
-          <div class="flex flex-col items-center">
-            <img src="/images/mattia-pirini-ossocubo.jpg" alt="Mattia Pirini's photo"
-              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Mattia Pirini</h3>
-            <p class="text-gray-700 dark:text-gray-300">Master of None</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Call to Action Section -->
     <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800" aria-labelledby="cta-heading">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <!-- Left Column: Decorative Image -->
-          <img src="/images/blue-volta-thumbnail.jpg" alt="Blue Volta game thumbnail"
-            class="w-full h-64 md:h-96 object-cover rounded-lg">
+          <!-- Left Column: Video Player -->
+          <div id="video-player-container" class="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
+            <!-- Placeholder Thumbnail -->
+            <img id="video-thumbnail"
+                 src="/images/blue-volta-thumbnail.webp"
+                 alt="Blue Volta game trailer"
+                 class="w-full h-full object-cover">
+
+            <!-- Play Button Overlay -->
+            <button id="play-button"
+                    type="button"
+                    class="absolute inset-0 m-auto w-20 h-20 md:w-24 md:h-24 bg-white/90 dark:bg-gray-800/90 dark:border-2 dark:border-gray-600 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                    aria-label="Play Blue Volta trailer">
+              <svg class="w-8 h-8 md:w-10 md:h-10 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </button>
+
+            <!-- Video Element (hidden initially) -->
+            <video id="blue-volta-video"
+                   class="w-full h-full object-cover hidden"
+                   controls
+                   preload="none">
+              <!-- Source will be added via JavaScript on click -->
+            </video>
+          </div>
           <!-- Right Column: Content -->
           <div>
             <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -188,6 +171,47 @@
       </div>
     </section>
 
+    <!-- Team Section -->
+    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="team-heading">
+      <div class="container mx-auto px-4">
+        <h2 id="team-heading" class="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12">
+          People
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          <!-- Team Member 1 -->
+          <div class="flex flex-col items-center">
+            <a href="https://twitter.com/ultralooca" target="_blank"><img src="/images/luca-esposito-ossocubo.webp"
+                alt="Luca's photo"
+                class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Luca</h3>
+            <p class="text-gray-700 dark:text-gray-300">Mad Bard and Dreadful Tyrant</p>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="flex flex-col items-center">
+            <a href="http://albertocongiu.com/" target="_blank"><img src="/images/alberto-congiu-ossocubo.webp"
+                alt="Alberto Congiu's photo"
+                class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Alberto Congiu</h3>
+            <p class="text-gray-700 dark:text-gray-300">General Purpose Code Monkey</p>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="flex flex-col items-center">
+            <a href="http://www.francescopirini.net/" target="_blank"><img src="/images/francesco-pirini-ossocubo.webp" alt="Francesco Pirini's photo"
+              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Francesco Pirini</h3>
+            <p class="text-gray-700 dark:text-gray-300">Indecisive Illustrator</p>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="flex flex-col items-center">
+            <a href="http://mattiapirini.net/" target="_blank"><img src="/images/mattia-pirini-ossocubo.webp" alt="Mattia Pirini's photo"
+              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Mattia Pirini</h3>
+            <p class="text-gray-700 dark:text-gray-300">Master of None</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- Get in Touch Section -->
     <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="contact-heading">
       <div class="container mx-auto px-4">
@@ -231,7 +255,6 @@
         <div>&copy; 2026 Ossocubo. All rights reserved.</div>
         <div class="flex gap-4 items-center">
           <span></span>
-          <span>|</span>
           <a href="https://www.iubenda.com/privacy-policy/7765199/full-legal" target="_blank"
             class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors">Privacy</a>
           <span>|</span>
