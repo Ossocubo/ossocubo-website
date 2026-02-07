@@ -5,14 +5,18 @@ const themeToggleBtn = document.getElementById('theme-toggle');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 
-// Function to update icon visibility
+// Function to update icon visibility and logo
 function updateThemeIcon() {
+  const logoImg = document.getElementById('logo-img') as HTMLImageElement | null;
+
   if (document.documentElement.classList.contains('dark')) {
     themeToggleLightIcon?.classList.remove('hidden');
     themeToggleDarkIcon?.classList.add('hidden');
+    if (logoImg) logoImg.src = '/images/ossocubo_logo_dark.webp';
   } else {
     themeToggleLightIcon?.classList.add('hidden');
     themeToggleDarkIcon?.classList.remove('hidden');
+    if (logoImg) logoImg.src = '/images/ossocubo_logo.webp';
   }
 }
 
@@ -120,4 +124,40 @@ const observer = new IntersectionObserver((entries) => {
 // Observe all fade-in elements
 document.querySelectorAll('.fade-in, .fade-in-logo').forEach(el => {
   observer.observe(el);
+});
+
+
+// Email obfuscation - assemble email from parts to prevent scraping
+(function () {
+  const emailBtn = document.getElementById('emailButton');
+  const emailText = document.getElementById('emailText');
+
+  if (emailBtn && emailText) {
+    const user = emailBtn.getAttribute('data-user');
+    const domain = emailBtn.getAttribute('data-domain');
+    const email = user + '@' + domain;
+
+    // Set the email text
+    emailText.textContent = email;
+
+    // Update aria-label for accessibility
+    emailBtn.setAttribute('aria-label', 'Invia un email a ' + email);
+
+    // Add click handler to open mailto
+    emailBtn.addEventListener('click', function () {
+      window.location.href = 'mailto:' + email;
+    });
+  }
+})();
+
+// Google Analytics event tracking for demo button
+declare function gtag(...args: any[]): void;
+
+const getDemoButton = document.getElementById('get-demo-button');
+getDemoButton?.addEventListener('click', function () {
+  gtag('event', 'signup_button_click', {
+    event_category: 'engagement',
+    event_label: 'Signup Button',
+    value: 1
+  });
 });

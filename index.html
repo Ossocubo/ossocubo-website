@@ -57,6 +57,17 @@
       document.documentElement.classList.remove('dark');
     }
   </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KMS7G7WTZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1KMS7G7WTZ');
+  </script>
+
+
 </head>
 
 <body>
@@ -74,9 +85,9 @@
       <div
         class="flex flex-col align-items-center justify-center bg-white dark:bg-gray-900 min-w-sm rounded-full p-2 aspect-square relative z-10 max-w-2xl shadow-2xl">
         <h1 class="fade-in-logo">
-          <img class="mx-auto max-w-64" src="/images/ossocubo_logo.webp" alt="Ossocubo">
+          <img id="logo-img" class="mx-auto max-w-64" src="/images/ossocubo_logo.webp" alt="Ossocubo">
         </h1>
-        <p class="mt-6 text-sm md:text-md/6 text-center px-2">
+        <p class="mt-6 text-sm md:text-md/6 text-center px-2 dark:text-white">
           A small game development team <BR> based in Switzerland and Italy.
         </p>
 
@@ -121,7 +132,7 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="section fade-in" aria-labelledby="cta-heading">
+    <section class="section-alt fade-in" aria-labelledby="cta-heading">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Column: Video Player -->
@@ -155,8 +166,8 @@
               confront ancient secrets and explore mysterious places teeming with wondrous creatures and bizarre
               characters.
             </p>
-            <a href="https://ossocubo.itch.io/blue-volta-prototype" target="_blank" rel="noopener noreferrer"
-              class="btn-primary">
+            <a id="get-demo-button" href="https://ossocubo.itch.io/blue-volta-prototype" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary">
               Get the demo on itch.io
             </a>
           </div>
@@ -215,15 +226,16 @@
             Get in Touch
           </h2>
           <!-- Email Button -->
-          <a href="mailto:info@ossocubo.com" class="btn-primary-icon mb-8" aria-label="Send email to info@ossocubo.com">
+          <button id="emailButton" data-user="info" data-domain="ossocubo.com"
+            class="btn btn-primary-icon mb-8 cursor-pointer" aria-label="Send email to info@ossocubo.com">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
               </path>
             </svg>
-            info@ossocubo.com
-          </a>
+            <span id="emailText"></span>
+          </button>
           <!-- Social Icons -->
           <div class="flex justify-center space-x-6">
             <!-- Instagram -->
@@ -269,6 +281,13 @@
   </footer>
 
   <script type="module" src="/src/main.ts"></script>
+  <script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":468142,"cookiePolicyUrl":"http://www.ossocubo.com/","whitelabel":false,"cookiePolicyId":7765199,"banner":{"position":"bottom"}};
+_iub.csLangConfiguration = {"it":{"cookiePolicyId":7765199}};
+</script>
+<script type="text/javascript" src="//cs.iubenda.com/sync/468142.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 </body>
 
 </html>

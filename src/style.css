@@ -9,11 +9,20 @@
    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
    --color-primary: var(--color-red-500);
+   --color-primary-hover: var(--color-red-600);
+   --color-primary-focus-ring: var(--color-red-300);
+
+   --color-secondary-focus-ring: var(--color-blue-300);
    --color-secondary: var(--color-blue-500);
+   --color-secondary-hover: var(--color-blue-600);
 
  }
 
  @layer base {
+   html, body {
+     @apply bg-white dark:bg-gray-900;
+   }
+
    a {
      @apply underline;
    }
@@ -29,23 +38,30 @@
 
  @layer components {
   .section{
-    @apply py-16 md:py-24 bg-white dark:bg-gray-900
+    @apply py-16 md:py-24
   }
+    .section-alt{
+    @apply py-16 md:py-24 bg-gray-50 dark:bg-gray-800
+  }
+
+   /* Base Button Styles */
+   .btn {
+     @apply bg-primary hover:bg-primary-hover dark:bg-secondary dark:hover:bg-secondary-hover focus:outline-none focus:ring-4 focus:ring-primary dark:focus:ring-secondary text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 no-underline transition-transform hover:scale-105;
+   }
 
    /* Primary CTA Button */
    .btn-primary {
-     @apply inline-block bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 no-underline;
-
+     @apply inline-block ;
    }
 
    /* Primary Button with Icon Support */
    .btn-primary-icon {
-     @apply inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 no-underline;
+     @apply inline-flex items-center justify-center gap-2;
    }
 
    /* Video Play Button */
    .btn-play {
-     @apply absolute inset-0 m-auto w-20 h-20 md:w-24 md:h-24 bg-white/90 dark:bg-gray-800/90 dark:border-2 dark:border-gray-600 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800;
+     @apply absolute inset-0 m-auto w-20 h-20 md:w-24 md:h-24 bg-white/90  rounded-full flex items-center justify-center transition-all duration-300 hover:bg-primary dark:hover:bg-secondary hover:text-white  focus:outline-none focus:ring-4 focus:ring-primary dark:focus:ring-secondary ;
    }
 
    /* Icon-Only Button */
