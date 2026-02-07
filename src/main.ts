@@ -155,9 +155,9 @@ declare function gtag(...args: any[]): void;
 
 const getDemoButton = document.getElementById('get-demo-button');
 getDemoButton?.addEventListener('click', function () {
-  gtag('event', 'signup_button_click', {
+  gtag('event', 'get_demo_button_click', {
     event_category: 'engagement',
-    event_label: 'Signup Button',
+    event_label: 'Blue Volta itch.io demo Button',
     value: 1
   });
 });
