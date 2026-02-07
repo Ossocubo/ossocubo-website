@@ -71,12 +71,13 @@
     <header
       class="flex items-center justify-center min-h-screen bg-gradient-to-br from-cyan-300 to-sky-500 dark:from-blue-900 dark:to-purple-900 relative"
       style="background-image: url('/images/ossocubo_blue_volta_pattern_BN_soft.webp'); background-repeat: repeat; background-blend-mode: overlay;">
-      <div class="text-center relative z-10 max-w-2xl">
-        <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold text-white fade-in-logo">
-          <img class="mx-auto" src="/images/ossocubo_logo.webp" alt="Ossocubo">
+      <div
+        class="flex flex-col align-items-center justify-center bg-white dark:bg-gray-900 min-w-sm rounded-full p-2 aspect-square relative z-10 max-w-2xl shadow-2xl">
+        <h1 class="fade-in-logo">
+          <img class="mx-auto max-w-64" src="/images/ossocubo_logo.webp" alt="Ossocubo">
         </h1>
-        <p class="mt-6 text-xl md:text-2xl/6">
-          <strong>A small game development team <BR> based in Switzerland and Italy.</strong>
+        <p class="mt-6 text-sm md:text-md/6 text-center px-2">
+          A small game development team <BR> based in Switzerland and Italy.
         </p>
 
       </div>
@@ -84,7 +85,8 @@
     <section class="section fade-in" aria-labelledby="message-heading">
       <div class="container mx-auto px-4 flex flex-col justify-center items-center ">
         <div class="max-w-2xl dark:text-white ">
-          <h2 id="message-heading" class="text-4xl md:text-5xl font-bold text-center  mb-12">A message from the team</h2>
+          <h2 id="message-heading" class="text-4xl md:text-5xl font-bold text-center  mb-12">A message from the team
+          </h2>
           <p>Hey folks!<br />We&rsquo;re Ossocubo, a small Italian development team that&rsquo;s been in hibernation for
             quite a while.</p>
           <p>Between 2014 and 2016 we worked on a graphic adventure called <em>Blue Volta</em>. What started as a small,
@@ -98,7 +100,7 @@
           <p>Will <em>Blue Volta</em> ever be fully released?<br />Maybe. If circumstances change and someone decides to
             throw some money, we&rsquo;d surely do it! We&rsquo;d probably make a different game today, but with the
             same heart.</p>
-            <br>
+          <br>
           <p>Now a few notes:</p>
           <ul class="list-disc list-inside mb-6">
             <li>This was created using <strong>Unity 5 / Unity 2017</strong>, we worked on it from 2014 to 2016 and it
@@ -125,26 +127,18 @@
           <!-- Left Column: Video Player -->
           <div id="video-player-container" class="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
             <!-- Placeholder Thumbnail -->
-            <img id="video-thumbnail"
-                 src="/images/blue-volta-thumbnail.webp"
-                 alt="Blue Volta game trailer"
-                 class="w-full h-full object-cover">
+            <img id="video-thumbnail" src="/images/blue-volta-thumbnail.webp" alt="Blue Volta game trailer"
+              class="w-full h-full object-cover">
 
             <!-- Play Button Overlay -->
-            <button id="play-button"
-                    type="button"
-                    class="btn-play"
-                    aria-label="Play Blue Volta trailer">
+            <button id="play-button" type="button" class="btn-play" aria-label="Play Blue Volta trailer">
               <svg class="w-8 h-8 md:w-10 md:h-10 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M8 5v14l11-7z"/>
+                <path d="M8 5v14l11-7z" />
               </svg>
             </button>
 
             <!-- Video Element (hidden initially) -->
-            <video id="blue-volta-video"
-                   class="w-full h-full object-cover hidden"
-                   controls
-                   preload="none">
+            <video id="blue-volta-video" class="w-full h-full object-cover hidden" controls preload="none">
               <!-- Source will be added via JavaScript on click -->
             </video>
           </div>
@@ -195,22 +189,24 @@
           </div>
           <!-- Team Member 3 -->
           <div class="flex flex-col items-center">
-            <a href="http://www.francescopirini.net/" target="_blank"><img src="/images/francesco-pirini-ossocubo.webp" alt="Francesco Pirini's photo"
-              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
+            <a href="http://www.francescopirini.net/" target="_blank"><img src="/images/francesco-pirini-ossocubo.webp"
+                alt="Francesco Pirini's photo"
+                class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Francesco Pirini</h3>
             <p class="text-gray-700 dark:text-gray-300">Indecisive Illustrator</p>
           </div>
           <!-- Team Member 4 -->
           <div class="flex flex-col items-center">
-            <a href="http://mattiapirini.net/" target="_blank"><img src="/images/mattia-pirini-ossocubo.webp" alt="Mattia Pirini's photo"
-              class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
+            <a href="http://mattiapirini.net/" target="_blank"><img src="/images/mattia-pirini-ossocubo.webp"
+                alt="Mattia Pirini's photo"
+                class="w-48 h-48 rounded-full object-cover mb-4 hover:scale-115 transition-transform duration-300"></a>
             <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-1">Mattia Pirini</h3>
             <p class="text-gray-700 dark:text-gray-300">Master of None</p>
           </div>
         </div>
       </div>
     </section>
-    
+
     <!-- Get in Touch Section -->
     <section class="section fade-in" aria-labelledby="contact-heading">
       <div class="container mx-auto px-4">
@@ -219,9 +215,7 @@
             Get in Touch
           </h2>
           <!-- Email Button -->
-          <a href="mailto:info@ossocubo.com"
-            class="btn-primary-icon mb-8"
-            aria-label="Send email to info@ossocubo.com">
+          <a href="mailto:info@ossocubo.com" class="btn-primary-icon mb-8" aria-label="Send email to info@ossocubo.com">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -257,9 +251,7 @@
           <a href="https://www.iubenda.com/privacy-policy/7765199/full-legal" target="_blank"
             class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors">Privacy</a>
           <span>|</span>
-          <button id="theme-toggle" type="button"
-            class="btn-icon"
-            aria-label="Toggle dark mode">
+          <button id="theme-toggle" type="button" class="btn-icon" aria-label="Toggle dark mode">
             <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
               <path
