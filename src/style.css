@@ -57,4 +57,27 @@
    .btn-social {
      @apply text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded transition-colors duration-200;
    }
+
+   /* Fade-in animations */
+   .fade-in {
+     opacity: 0;
+     transform: translateY(20px);
+     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+   }
+
+   .fade-in.visible {
+     opacity: 1;
+     transform: translateY(0);
+   }
+
+   .fade-in-logo {
+     opacity: 0;
+     transform: scale(0.95);
+     transition: opacity 1s ease-out, transform 1s ease-out;
+   }
+
+   .fade-in-logo.visible {
+     opacity: 1;
+     transform: scale(1);
+   }
  }
