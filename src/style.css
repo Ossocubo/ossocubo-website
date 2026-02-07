@@ -1,21 +1,60 @@
- @import "@fontsource/anonymous-pro"; 
-@import "tailwindcss";
+ @import "@fontsource/anonymous-pro";
+ @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+ @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
-   --font-sans: "Anonymous Pro","Open sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  
+ @theme {
+   --font-sans: "Anonymous Pro", "Open sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
    --color-primary: var(--color-red-500);
-  --color-secondary: var(--color-blue-500);
+   --color-secondary: var(--color-blue-500);
 
-}
+ }
 
-strong, b {font-weight:900;}
+ @layer base {
+   a {
+     @apply underline;
+   }
 
-a {
-  
-  text-decoration: underline;
-}
+   strong {
+     @apply font-black;
+   }
+   footer a {
+     @apply no-underline;
+   }
+ }
+
+
+ @layer components {
+  .section{
+    @apply py-16 md:py-24 bg-white dark:bg-gray-900
+  }
+
+   /* Primary CTA Button */
+   .btn-primary {
+     @apply inline-block bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 no-underline;
+
+   }
+
+   /* Primary Button with Icon Support */
+   .btn-primary-icon {
+     @apply inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 no-underline;
+   }
+
+   /* Video Play Button */
+   .btn-play {
+     @apply absolute inset-0 m-auto w-20 h-20 md:w-24 md:h-24 bg-white/90 dark:bg-gray-800/90 dark:border-2 dark:border-gray-600 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800;
+   }
+
+   /* Icon-Only Button */
+   .btn-icon {
+     @apply text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 rounded p-1 cursor-pointer;
+   }
+
+   /* Social Media Link Button */
+   .btn-social {
+     @apply text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded transition-colors duration-200;
+   }
+ }

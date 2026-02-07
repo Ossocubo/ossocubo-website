@@ -81,7 +81,7 @@
 
       </div>
     </header>
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="message-heading">
+    <section class="section" aria-labelledby="message-heading">
       <div class="container mx-auto px-4 flex flex-col justify-center items-center ">
         <div class="max-w-2xl dark:text-white ">
           <h2 id="message-heading" class="text-4xl md:text-5xl font-bold text-center  mb-12">A message from the team</h2>
@@ -119,7 +119,7 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-800" aria-labelledby="cta-heading">
+    <section class="section" aria-labelledby="cta-heading">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Left Column: Video Player -->
@@ -133,7 +133,7 @@
             <!-- Play Button Overlay -->
             <button id="play-button"
                     type="button"
-                    class="absolute inset-0 m-auto w-20 h-20 md:w-24 md:h-24 bg-white/90 dark:bg-gray-800/90 dark:border-2 dark:border-gray-600 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800"
+                    class="btn-play"
                     aria-label="Play Blue Volta trailer">
               <svg class="w-8 h-8 md:w-10 md:h-10 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M8 5v14l11-7z"/>
@@ -162,7 +162,7 @@
               characters.
             </p>
             <a href="https://ossocubo.itch.io/blue-volta-prototype" target="_blank" rel="noopener noreferrer"
-              class="inline-block bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+              class="btn-primary"
               aria-label="Learn more about working with Ossocubo">
               Get the demo on itch.io
             </a>
@@ -172,7 +172,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="team-heading">
+    <section class="section" aria-labelledby="team-heading">
       <div class="container mx-auto px-4">
         <h2 id="team-heading" class="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-12">
           People
@@ -213,7 +213,7 @@
     </section>
     
     <!-- Get in Touch Section -->
-    <section class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="contact-heading">
+    <section class="section" aria-labelledby="contact-heading">
       <div class="container mx-auto px-4">
         <div class="max-w-2xl mx-auto text-center">
           <h2 id="contact-heading" class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
@@ -221,7 +221,7 @@
           </h2>
           <!-- Email Button -->
           <a href="mailto:info@ossocubo.com"
-            class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 mb-8"
+            class="btn-primary-icon mb-8"
             aria-label="Send email to info@ossocubo.com">
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -235,7 +235,7 @@
           <div class="flex justify-center space-x-6">
             <!-- Instagram -->
             <a href="https://www.instagram.com/ossocubo" target="_blank" aria-label="Visit our Instagram profile"
-              class="text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded transition-colors duration-200">
+              class="btn-social">
               <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 448 512"
                 fill="currentColor"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
                 <path
@@ -259,7 +259,7 @@
             class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors">Privacy</a>
           <span>|</span>
           <button id="theme-toggle" type="button"
-            class="text-gray-300 hover:text-white dark:text-gray-400 dark:hover:text-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 rounded p-1"
+            class="btn-icon"
             aria-label="Toggle dark mode">
             <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
