@@ -1,0 +1,55 @@
+# --- Allow major search engines ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# --- Block AI content scrapers and aggressive bots ---
+User-agent: OpenAI
+Disallow: /
+
+User-agent: ChatGPT
+Disallow: /
+
+User-agent: HuggingFace
+Disallow: /
+
+User-agent: Anthropic
+Disallow: /
+
+User-agent: You
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+# --- Catch-all for unknown bots ---
+User-agent: *
+Disallow: /private/
+Disallow: /api/
+Disallow: /admin/
