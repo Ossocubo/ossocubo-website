@@ -1,6 +1,8 @@
 import './style.css';
 
+// ============================================================================
 // Dark mode toggle functionality
+// ============================================================================
 const themeToggleBtn = document.getElementById('theme-toggle');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
@@ -38,7 +40,9 @@ themeToggleBtn?.addEventListener('click', () => {
   updateThemeIcon();
 });
 
+// ============================================================================
 // Video Player functionality
+// ============================================================================
 const playButton = document.getElementById('play-button') as HTMLButtonElement | null;
 const thumbnail = document.getElementById('video-thumbnail');
 const video = document.getElementById('blue-volta-video') as HTMLVideoElement | null;
@@ -106,7 +110,9 @@ playButton?.addEventListener('keydown', (e) => {
   }
 });
 
+// ============================================================================
 // Intersection Observer for scroll animations
+// ============================================================================
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -100px 0px'
@@ -126,8 +132,9 @@ document.querySelectorAll('.fade-in, .fade-in-logo').forEach(el => {
   observer.observe(el);
 });
 
-
+// ============================================================================
 // Email obfuscation - assemble email from parts to prevent scraping
+// ============================================================================
 (function () {
   const emailBtn = document.getElementById('emailButton');
   const emailText = document.getElementById('emailText');
@@ -150,7 +157,9 @@ document.querySelectorAll('.fade-in, .fade-in-logo').forEach(el => {
   }
 })();
 
+// ============================================================================
 // Google Analytics event tracking for demo button
+// ============================================================================
 declare function gtag(...args: any[]): void;
 
 const getDemoButton = document.getElementById('get-demo-button');
@@ -161,3 +170,12 @@ getDemoButton?.addEventListener('click', function () {
     value: 1
   });
 });
+
+// ============================================================================
+// Dynamic year update for footer
+// ============================================================================
+
+const yearElement = document.getElementById("year");
+if (yearElement) {
+  yearElement.innerHTML = new Date().getFullYear().toString();
+}

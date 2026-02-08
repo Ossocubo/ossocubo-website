@@ -46,7 +46,7 @@
 
    /* Base Button Styles */
    .btn {
-     @apply bg-primary hover:bg-primary-hover dark:bg-secondary dark:hover:bg-secondary-hover focus:outline-none focus:ring-4 focus:ring-primary dark:focus:ring-secondary text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 no-underline transition-transform hover:scale-105;
+     @apply bg-primary hover:bg-primary-hover dark:bg-secondary dark:hover:bg-secondary-hover focus:outline-none focus:ring-4 focus:ring-primary dark:focus:ring-secondary text-white tracking-wider font-medium px-8 py-3 rounded-lg transition-colors duration-200 no-underline transition-transform hover:scale-105;
    }
 
    /* Primary CTA Button */
