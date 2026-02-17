@@ -1,3 +1,5 @@
+Sitemap: https://ossocubo.com/sitemap.xml
+
 # --- Allow major search engines ---
 User-agent: Googlebot
 Allow: /
